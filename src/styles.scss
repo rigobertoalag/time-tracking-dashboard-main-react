@@ -1,0 +1,59 @@
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+$Blue: hsl(246, 80%, 60%);
+
+$Orange: hsl(15, 100%, 70%); //(work)
+$Softblue: hsl(195, 74%, 62%); //(play)
+$Lightred: hsl(348, 100%, 68%); //(study)
+$Limegreen: hsl(145, 58%, 55%); //(exercise)
+$Violet: hsl(264, 64%, 52%); //(social)
+$Softorange: hsl(43, 84%, 65%); //(self care)
+
+$Verydarkblue: hsl(226, 43%, 10%);
+$Darkblue: hsl(235, 46%, 20%);
+$Desaturatedblue: hsl(235, 45%, 61%);
+$PaleBlue: hsl(236, 100%, 87%);
+
+$Fontsize: 18px; //(card titles e.g. Work, Play)
+
+/*
+Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+Weights: 300, 400, 500
+*/
+$FontLight: 300;
+$FontMedium: 400;
+$FontBold: 500;
+
+body{
+    margin: 0;
+    font-family: 'Rubik';
+}
+
+.app{
+    background-color: $Verydarkblue;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 60%;
+    height: 30em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    // grid-template-rows: 3em;
+}
+
+@media (max-width: 425px) {
+    .app{
+        height: 100%;
+    }
+    .container{
+        width: 90%;
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+}

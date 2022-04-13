@@ -1,0 +1,96 @@
+@import '../../styles.scss';
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.ic-container{
+    background-color: $Orange;
+    border-radius: 1em;
+    height: 40%;
+}
+.icon{
+    height: 60%;
+    display: block;
+    margin-right: 1em;
+    margin-left: auto;
+}
+.ic-c-work{
+    background-color: $Orange;
+}
+.ic-c-play{
+    background-color: $Softblue;
+}
+.ic-c-study{
+    background-color: $Lightred;
+}
+.ic-c-exercise{
+    background-color: $Limegreen;
+}
+.ic-c-social{
+    background-color: $Violet;
+}
+.ic-c-self{
+    background-color: $Softorange;
+}
+
+
+.ic-data-container{
+    color: white;
+    background-color: $Darkblue;
+    padding: 1.5em 1.5em;
+    border-radius: 1em;
+}
+.ic-data-container:hover{
+    
+    background-color: hsl(236, 33%, 35%);
+    
+}
+.ic-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ic-task{
+    font-weight: $FontBold;
+}
+.ic-options{
+    font-weight: $FontBold;
+    display: block;
+    margin-top: 0;
+    margin-bottom: auto;
+    font-size: larger;
+    color: $PaleBlue;
+}
+
+.ic-hours{
+    font-size: xx-large;
+    font-weight: $FontLight;
+}
+.ic-lastweek{
+    font-size: small;
+    font-weight: $FontLight;
+    color: $PaleBlue;
+}
+
+
+
+@media (max-width: 425px) {
+    .main{
+        grid-template-columns: 1fr;
+        gap: 0.2em;
+    }
+
+    .ic-container{
+        height: 40%;
+        width: 100%;
+    }
+
+    .ic-data-container{
+        padding: 0.2em 1.5em;
+        border-radius: 1em;
+    }
+}
